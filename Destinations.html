@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations | Incredible India</title>
+
+  <meta name="description" content="Explore the best tourist destinations of India across North, South, East and West regions. Discover culture, heritage and natural beauty." />
+  <meta name="keywords" content="India Destinations, North India Tourism, South India Tourism, East India Tourism, West India Tourism, Incredible India Travel" />
+  <meta name="author" content="Jaydev Parmar" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto;
+    }
+
+    body {
+      background-color: #f5f8fc;
+      color: #0f172a;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: #020617;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+
+    .nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .nav a:hover {
+      color: #38bdf8;
+    }
+
+    .back-btn-wrap {
+      margin: 20px 0 0;
+      text-align: center;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 8px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .back-btn:hover {
+      background: #bae6fd;
+    }
+
+    .hero-section {
+      background-color: #e9f2ff;
+      padding: 70px 0 40px;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .hero-section p {
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 auto;
+      color: #475569;
+    }
+
+    .content-container {
+      padding: 60px 0;
+    }
+
+    .region-title {
+      font-size: 26px;
+      margin: 30px 0 16px 0;
+      color: #0f4c81;
+    }
+
+    .destination-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .destination-card {
+      background-color: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .destination-content {
+      padding: 18px;
+    }
+
+    .destination-content h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .destination-content p {
+      font-size: 15px;
+      color: #475569;
+    }
+
+    footer {
+      background: #020617;
+      color: #e5e7eb;
+      padding: 60px 0;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-grid h4 {
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .footer-grid a {
+      display: block;
+      color: #cbd5f5;
+      text-decoration: none;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .footer-grid a:hover {
+      color: #38bdf8;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 28px;
+      }
+
+      .hero-section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="Home.html" class="logo">Incredible India 🇮🇳</a>
+    <nav class="nav">
+      <a href="Home.html">Home</a>
+      <a href="AboutIndia.html">About India</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Culture.html">Culture</a>
+      <a href="ContactUs.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero-section">
+    <div class="container">
+      <h1>Explore Top Destinations in India</h1>
+      <p>
+        Discover the most beautiful places across North, South, East and West India.
+        Each destination offers a unique blend of culture, nature and history.
+      </p>
+
+      <div class="back-btn-wrap">
+        <a href="Home.html" class="back-btn">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-container">
+    <div class="container">
+
+      <h2 class="region-title">North India</h2>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="./Manali.jpg" alt="Manali, Himachal Pradesh" />
+          <div class="destination-content">
+            <h3>Manali, Himachal Pradesh</h3>
+            <p>
+              A popular hill station known for snow-capped mountains, adventure sports and scenic valleys.
+              It is a perfect destination for nature lovers and honeymoon travelers.
+            </p>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="./tajmahal.jpg" alt="Taj Mahal, Agra" />
+          <div class="destination-content">
+            <h3>Taj Mahal, Agra</h3>
+            <p>
+              One of the Seven Wonders of the World, the Taj Mahal is a symbol of love and an architectural masterpiece.
+              It represents India's rich heritage and history.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="region-title">West India</h2>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="./Dwarka.jpg" alt="Dwarka, Gujarat" />
+          <div class="destination-content">
+            <h3>Dwarka, Gujarat</h3>
+            <p>
+              An ancient coastal city known for its spiritual significance and beautiful sea views.
+              Dwarka is one of the Char Dham pilgrimage sites in India.
+            </p>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="./GirNationalPark.jpg" alt="Gir National Park, Gujarat" />
+          <div class="destination-content">
+            <h3>Gir National Park, Gujarat</h3>
+            <p>
+              The only natural habitat of Asiatic lions in the world.
+              A must-visit destination for wildlife and nature enthusiasts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="region-title">South India</h2>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="./Munnar.jpg" alt="Munnar, Kerala" />
+          <div class="destination-content">
+            <h3>Munnar, Kerala</h3>
+            <p>
+              Famous for its tea plantations, misty hills and peaceful atmosphere.
+              Munnar is an ideal destination for relaxation and nature photography.
+            </p>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="./Hampi.avif" alt="Hampi, Karnataka" />
+          <div class="destination-content">
+            <h3>Hampi, Karnataka</h3>
+            <p>
+              A UNESCO World Heritage Site known for its ancient ruins, temples and historical significance.
+              It is a paradise for history lovers and explorers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="region-title">East India</h2>
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img src="./Darjeeling.avif" alt="Darjeeling, West Bengal" />
+          <div class="destination-content">
+            <h3>Darjeeling, West Bengal</h3>
+            <p>
+              Known for its tea gardens, toy train and stunning Himalayan views.
+              Darjeeling offers a calm and romantic hill station experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="destination-card">
+          <img src="./Kaziranga.jpg" alt="Kaziranga National Park, Assam" />
+          <div class="destination-content">
+            <h3>Kaziranga National Park, Assam</h3>
+            <p>
+              Famous for the one-horned rhinoceros, Kaziranga is a UNESCO World Heritage Site
+              and one of India's top wildlife destinations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>About This Project</h4>
+      <p>This website is a student project created to showcase India’s tourism, culture and destinations in a clean and user-friendly way.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="Home.html">Home</a>
+      <a href="AboutIndia.html">About India</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Culture.html">Culture</a>
+      <a href="ContactUs.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:jdparmar6090@gmail.com">jdparmar6090@gmail.com</a>
+      <p>Developer: Jaydev Parmar</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Incredible India | Developed by Jaydev Parmar</div>
+</footer>
+
+</body>
+</html>

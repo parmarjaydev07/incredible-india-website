@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Incredible India</title>
+
+  <meta name="description" content="Explore beautiful photos of Incredible India. Discover culture, heritage, festivals, mountains, beaches and wildlife across India." />
+  <meta name="keywords" content="India Gallery, Incredible India Photos, Indian Culture Images, India Tourism Gallery" />
+  <meta name="author" content="Jaydev Parmar" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto;
+    }
+
+    body {
+      background-color: #f5f8fc;
+      color: #0f172a;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: #020617;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+
+    .nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .nav a:hover {
+      color: #38bdf8;
+    }
+
+    .back-btn-wrap {
+      margin: 20px 0 0;
+      text-align: center;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 8px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .back-btn:hover {
+      background: #bae6fd;
+    }
+
+    .hero-section {
+      background-color: #e9f2ff;
+      padding: 70px 0 40px;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .hero-section p {
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 auto;
+      color: #475569;
+    }
+
+    .gallery-section {
+      padding: 60px 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery-item {
+      background: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-caption {
+      padding: 12px 14px;
+      font-size: 14px;
+      color: #475569;
+      text-align: center;
+    }
+
+    footer {
+      background: #020617;
+      color: #e5e7eb;
+      padding: 60px 0;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-grid h4 {
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .footer-grid a {
+      display: block;
+      color: #cbd5f5;
+      text-decoration: none;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .footer-grid a:hover {
+      color: #38bdf8;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h1 {
+        font-size: 28px;
+      }
+
+      .hero-section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="Home.html" class="logo">Incredible India 🇮🇳</a>
+    <nav class="nav">
+      <a href="Home.html">Home</a>
+      <a href="AboutIndia.html">About India</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Culture.html">Culture</a>
+      <a href="ContactUs.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero-section">
+    <div class="container">
+      <h1>Travel Gallery</h1>
+      <p>
+        A visual journey through India’s colors, festivals, landscapes, culture and heritage.
+      </p>
+
+      <div class="back-btn-wrap">
+        <a href="Home.html" class="back-btn">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="./GirNationalPark.jpg" alt="Gir National Park">
+          <div class="gallery-caption">Gir National Park, Gujarat</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./Mountainview.jpg" alt="Mountain landscape in India">
+          <div class="gallery-caption">Mountain Landscapes, North India</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./IndianBeach.jpg" alt="Beach in India">
+          <div class="gallery-caption">Peaceful Beaches, West & South India</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./Heritage.jpg" alt="Indian heritage site">
+          <div class="gallery-caption">Historic Heritage Sites</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./Manali.jpg" alt="Manali hill station">
+          <div class="gallery-caption">Manali, Himachal Pradesh</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./tajmahal.jpg" alt="Taj Mahal, Agra">
+          <div class="gallery-caption">Taj Mahal, Agra</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./Dwarka.jpg" alt="Dwarka, Gujarat">
+          <div class="gallery-caption">Dwarka, Gujarat</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="./Darjeeling.avif" alt="Darjeeling hill station">
+          <div class="gallery-caption">Darjeeling, West Bengal</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>About This Project</h4>
+      <p>This website is a student project created to showcase India’s tourism, culture and destinations in a clean and user-friendly way.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="Home.html">Home</a>
+      <a href="AboutIndia.html">About India</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Culture.html">Culture</a>
+      <a href="ContactUs.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:jdparmar6090@gmail.com">jdparmar6090@gmail.com</a>
+      <p>Developer: Jaydev Parmar</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Incredible India | Developed by Jaydev Parmar</div>
+</footer>
+
+</body>
+</html>

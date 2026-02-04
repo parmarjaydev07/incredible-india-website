@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Incredible India – Explore North, South, East and West India with top tourist destinations, culture, heritage, beaches, mountains and food.">
+  <meta name="keywords" content="Incredible India, India Tourism, North India, South India, East India, West India, Indian Destinations, Travel India">
+  <meta name="author" content="Jaydev Parmar">
+  <title>Incredible India | Explore Real India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto;
+    }
+
+    body {
+      background: #ffffff;
+      color: #0f172a;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: #020617;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      background: #020617;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero-map {
+      overflow: hidden;
+      max-width: 520px;
+      margin-left: auto;
+      height: 485px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .hero-map img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .hero-box {
+      background: rgba(2, 6, 23, 0.6);
+      padding: 50px;
+      border-radius: 14px;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      color: #ffffff;
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #e5e7eb;
+      font-size: 17px;
+      margin-bottom: 22px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #38bdf8;
+      color: #020617;
+      padding: 12px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .cta:hover {
+      background: #0ea5e9;
+      color: #ffffff;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    .section-desc {
+      text-align: center;
+      color: #475569;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body h3 {
+      margin-bottom: 6px;
+      font-size: 20px;
+    }
+
+    .card-body p {
+      color: #475569;
+      font-size: 15px;
+    }
+
+    .highlight {
+      background: #f8fafc;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .split img {
+      width: 100%;
+      border-radius: 16px;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .badges {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 14px;
+      transition: 0.25s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.04);
+    }
+
+    footer {
+      background: #020617;
+      color: #e5e7eb;
+      padding: 60px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-grid h4 {
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .footer-grid a {
+      display: block;
+      color: #cbd5f5;
+      text-decoration: none;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .footer-grid a:hover {
+      color: #38bdf8;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-map {
+        max-width: 320px;
+        margin: 20px auto 0;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .split {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Incredible India 🇮🇳</div>
+    <nav class="nav">
+      <a href="Home.html">Home</a>
+      <a href="AboutIndia.html">About India</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Culture.html">Culture</a>
+      <a href="ContactUs.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-box">
+      <h1>Discover the Real Beauty of India ✨</h1>
+      <p>From ancient temples and royal forts to calm beaches and mighty mountains, India offers unforgettable travel stories in every direction 🌄🏖️</p>
+      <a href="Destinations.html" class="cta">Start Exploring 🚀</a>
+    </div>
+    <div class="hero-map">
+      <img src="./2561178.svg" alt="Map of India">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Top Places Across India 🌏</h2>
+    <p class="section-desc">North, South, East & West – explore the best destinations loved by travelers</p>
+    <div class="cards">
+      <div class="card">
+        <img src="./NorthIndia.jpg" alt="North India Mountains and Heritage">
+        <div class="card-body">
+          <h3>North India 🏔️</h3>
+          <p>Snowy Himalayas, spiritual cities like Varanasi, royal Rajasthan forts and iconic Taj Mahal in Agra.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./SouthIndia.jpg" alt="South India Beaches and Temples">
+        <div class="card-body">
+          <h3>South India 🌴</h3>
+          <p>Green hills of Munnar, peaceful Kerala backwaters, temples of Tamil Nadu and tech city Bengaluru.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./North-East-Tourism.webp" alt="East India Culture and Nature">
+        <div class="card-body">
+          <h3>East India 🌄</h3>
+          <p>Tea gardens of Assam, scenic Meghalaya waterfalls, cultural Kolkata and Odisha’s ancient temples.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./WestIndia.jpg" alt="West India Desert and Beaches">
+        <div class="card-body">
+          <h3>West India 🏜️</h3>
+          <p>Desert safaris in Rajasthan, Mumbai city life, Goa beaches and Gujarat’s spiritual destinations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section highlight">
+  <div class="container split">
+    <div>
+      <h2>Why Travelers Love India ❤️</h2>
+      <p>India is not just a destination, it’s an experience. Every state brings new flavors, traditions and stories that stay with you forever.</p>
+      <div class="badges">
+        <span class="badge">Heritage 🏛️</span>
+        <span class="badge">Culture 🎭</span>
+        <span class="badge">Food 🍛</span>
+        <span class="badge">Nature 🌿</span>
+        <span class="badge">Spirituality 🧘‍♂️</span>
+      </div>
+    </div>
+    <img src="./Experience.jpg" alt="Indian culture and travel experience">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Glimpses of Incredible India 📸</h2>
+    <p class="section-desc">A small preview of India’s colors, festivals, landscapes and lifestyle</p>
+    <div class="gallery">
+      <img src="./Garba.jpg" alt="Indian festival celebration">
+      <img src="./Mountainview.jpg" alt="Mountain view in India">
+      <img src="./IndianBeach.jpg" alt="Indian beach destination">
+      <img src="./Heritage.jpg" alt="Indian heritage site">
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>About This Project</h4>
+      <p>This website is a student project created to showcase India’s tourism, culture and destinations in a clean and user-friendly way.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="Home.html">Home</a>
+      <a href="AboutIndia.html">About India</a>
+      <a href="Destinations.html">Destinations</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Culture.html">Culture</a>
+      <a href="ContactUs.html">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:jdparmar6090@gmail.com">jdparmar6090@gmail.com</a>
+      <p>Developer: Jaydev Parmar</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Incredible India | Developed by Jaydev Parmar</div>
+</footer>
+
+</body>
+</html>
